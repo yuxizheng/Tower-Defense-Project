@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/back1">
+        <file>image/gameofthrones.jpg</file>
+        <file>image/icons8-delete-50.png</file>
+        <file>image/icons8-play-100.png</file>
+        <file>image/icons8-home-50.png</file>
+    </qresource>
+</RCC>
