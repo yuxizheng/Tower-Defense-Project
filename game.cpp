@@ -1,5 +1,8 @@
 #include "game.h"
 #include "enemy.h"
+#include "buildfiretowericon.h"
+#include "buildwatertowericon.h"
+#include "enemyteam.h"
 
 Game::Game()
 {
@@ -15,14 +18,29 @@ Game::Game()
     build = nullptr;
     setMouseTracking(true);
 
-    Enemy * enemy = new Enemy();
-    scene->addItem(enemy);
+    score = new Score();
+    scene->addItem(score);
+    score->setPos(0,0);
 
-    BuildTowerIcon * icon = new BuildTowerIcon;
-    scene->addItem(icon);
+    health = new Health();
+    scene->addItem(health);
+    health->setPos(0,20);
+
+    QList<QPointF> points;
+    points<< QPointF(0,0) << QPointF(450,450) << QPointF(0,600);
+    EnemyTeam * team = new EnemyTeam();
+    team->setEnemyTeam(1500, 5, ":/enemy/Resources/enemy.jpg", points);
+
+    BuildFireTowerIcon * FireIcon = new BuildFireTowerIcon;
+    scene->addItem(FireIcon);
+    FireIcon->setPos(720,0);
+
+    BuildWaterTowerIcon * WaterIcon = new BuildWaterTowerIcon;
+    scene->addItem(WaterIcon);
+    WaterIcon->setPos(720,80);
 }
 
-void Game::setCursor(QString filename)
+void Game::setCursor(QString filename,QPoint p)
 {
     if(cursor){
         scene->removeItem(cursor);
@@ -31,6 +49,7 @@ void Game::setCursor(QString filename)
 
     cursor = new QGraphicsPixmapItem();
     cursor->setPixmap(QPixmap(filename));
+    cursor->setPos(p);
     scene->addItem(cursor);
 }
 

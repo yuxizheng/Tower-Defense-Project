@@ -1,20 +1,24 @@
 #include "bullet.h"
 #include "game.h"
+#include "enemy.h"
 
 #include <QPixmap>
 #include <QTimer>
 #include <qmath.h>
 
+extern Game * game;
+
 Bullet::Bullet(QGraphicsItem *parent): QObject(),QGraphicsPixmapItem(parent){
 
-    setPixmap(QPixmap(":/bullet/Resources/bullet.jpg"));
-
-    QTimer * timer = new QTimer(this);
-    connect(timer,SIGNAL(timeout()),this,SLOT(shoot()));
-    timer->start(50);
+    setData(1,"bullet");
 
     maxRange = 100;
     distanceTravelled = 0;
+
+    timer = new QTimer(this);
+    connect(timer,SIGNAL(timeout()),this,SLOT(shoot()));
+    timer->start(50);
+
 }
 
 void Bullet::shoot(){
@@ -29,6 +33,8 @@ void Bullet::shoot(){
 
 }
 
+
+
 double Bullet::getMaxRange()
 {
     return maxRange;
@@ -42,6 +48,23 @@ double Bullet::getDistanceTravelled()
 void Bullet::setMaxRange(double rng)
 {
     maxRange = rng;
+}
+
+void Bullet::setDistanceTravelled(double dist)
+{
+    distanceTravelled = dist;
+}
+
+
+
+void Bullet::setDamage(int damage)
+{
+    this->damage = damage;
+}
+
+int Bullet::getDamage()
+{
+    return damage;
 }
 
 

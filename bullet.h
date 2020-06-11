@@ -9,16 +9,19 @@ class Bullet: public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
 public:
     Bullet(QGraphicsItem * parent=0);
+    QTimer * timer;
 public slots:
-    void shoot();
+    virtual void shoot();
     double getMaxRange ();
     double getDistanceTravelled();
     void setMaxRange (double rng);
     void setDistanceTravelled(double dist);
-private:
+    void setDamage(int damage);
+    int getDamage();
+protected:
+    int damage;
     double maxRange;
     double distanceTravelled;
-
 };
 
 #endif // BULLET_H

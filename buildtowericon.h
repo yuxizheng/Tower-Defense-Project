@@ -8,7 +8,7 @@ class BuildTowerIcon: public QGraphicsPixmapItem
 {
 public:
     BuildTowerIcon(QGraphicsItem * parent = 0);
-    void mousePressEvent(QGraphicsSceneMouseEvent * event);
+    virtual void mousePressEvent(QGraphicsSceneMouseEvent * event);
 };
 
 #endif // BUILDTOWERICON_H
