@@ -1,5 +1,6 @@
 # Tower-Defense-Project
 Build a tower defense game on QT 
+please delete the level1 and mainwindow i got it wrong
 
 6/7/
 I change the plan, no longer using mainwindow as the canvas,
