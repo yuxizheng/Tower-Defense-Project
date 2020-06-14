@@ -12,4 +12,6 @@ I still have to figure out how to get the update function, will wait for ideas!
 6/11/
 towerposition added but the mousepressevent is shit
 
-
+6/14/
+make the function that control the enemyteam
+and fix the mousepressevent shit
