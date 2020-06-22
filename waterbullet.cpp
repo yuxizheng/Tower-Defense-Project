@@ -1,4 +1,4 @@
-#include "firebullet.h"
+#include "waterbullet.h"
 #include "game.h"
 
 #include <qmath.h>
@@ -6,19 +6,19 @@
 
 extern Game * game;
 
-FireBullet::FireBullet()
+WaterBullet::WaterBullet()
 {
     QMediaPlayer * bulletsound = new QMediaPlayer();
-    bulletsound->setMedia(QUrl("qrc:/sound/Resources/fire.wav"));
+    bulletsound->setMedia(QUrl("qrc:/sound/Resources/water.wav"));
     bulletsound->play();
 
-    setPixmap(QPixmap(":/bullet/Resources/firebullet.jpg"));
+    setPixmap(QPixmap(":/bullet/Resources/waterbullet.jpg"));
 
-    maxRange = 200;
-    setDamage(6);
+    maxRange = 150;
+    setDamage(10);
 }
 
-void FireBullet::shoot()
+void WaterBullet::shoot()
 {
     ifCollideWithEnemy();
 
@@ -39,4 +39,3 @@ void FireBullet::shoot()
         return;
     }
 }
-
