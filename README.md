@@ -20,3 +20,6 @@ and fix the mousepressevent
 6/20/
 achieve the function of upgrade and remove
 change a lot in the position stuff
+
+6/22/
+soundeffect for the bullet
