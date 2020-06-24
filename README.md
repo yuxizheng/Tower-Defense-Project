@@ -23,3 +23,6 @@ change a lot in the position stuff
 
 6/22/
 soundeffect for the bullet
+
+6/24/
+add windows and a new level
