@@ -9,6 +9,7 @@ BuildFireTowerIcon::BuildFireTowerIcon(QGraphicsItem *parent){
 }
 
 void BuildFireTowerIcon::mousePressEvent(QGraphicsSceneMouseEvent* event){
+    soundEmit();
     if (!game->build){
         game->build = new FireTower();
         game->setCursor(QString(":/tower/Resources/firetower.jpg"),QPoint(720,0));

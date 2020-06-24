@@ -69,11 +69,12 @@ void Bullet::ifCollideWithEnemy()
             enemy->healthDecrease(getDamage());
 
             game->scene->removeItem(this);
-
+            delete this;
             return;
         }
     }
 }
+
 
 
 

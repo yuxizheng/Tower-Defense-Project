@@ -12,3 +12,10 @@ void BuildTowerIcon::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
 
 }
+
+void BuildTowerIcon::soundEmit()
+{
+    QMediaPlayer * sound = new QMediaPlayer();
+    sound->setMedia(QUrl("qrc:/sound/Resources/clickButton.wav"));
+    sound->play();
+}

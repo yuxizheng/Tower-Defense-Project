@@ -18,7 +18,8 @@ Enemy::Enemy(QList<QPointF> route, QString pix, int healthlevel)
 
     setPixmap(QPixmap(pix));
 
-    health=healthlevel;
+    health = healthlevel;
+    init_health = healthlevel;
 
     points = route;
 
@@ -47,9 +48,11 @@ void Enemy::healthDecrease(int damage)
 {
     health -= damage;
     if(health<=0){
-        game->score->increase();
+        game->score->increase(init_health);
+        game->recordWave();
         timer->stop();
         game->scene->removeItem(this);
+        delete this;
         return;
     }
 }
@@ -80,6 +83,9 @@ void Enemy::move_forward()
         point_index++;
         if(point_index>=points.size()){
             game->health->decrease();
+            if(game->health->getHealth()<0){
+                game->displayGameOverWindow("you lose");
+            }
             game->scene->removeItem(this);
             delete this;
             return;

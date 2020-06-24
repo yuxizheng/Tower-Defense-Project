@@ -9,6 +9,8 @@ extern Game * game;
 
 FireTower::FireTower(QGraphicsItem *parent)
 {
+    game->score->decrease(30);
+
     setPixmap(QPixmap(":/tower/Resources/firetower.jpg"));
 
     level = 1;
@@ -53,6 +55,7 @@ void FireTower::aquire_target()
 void FireTower::update()
 {
     if(level<2){
+        game->score->decrease(50);
         level++;
         setPixmap(QPixmap(":/tower/Resources/firetower2.jpg"));
     }

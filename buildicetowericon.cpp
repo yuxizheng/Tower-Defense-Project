@@ -9,6 +9,7 @@ BuildIceTowerIcon::BuildIceTowerIcon(QGraphicsItem *parent){
 }
 
 void BuildIceTowerIcon::mousePressEvent(QGraphicsSceneMouseEvent* event){
+    soundEmit();
     if (!game->build){
         game->build = new IceTower();
         game->setCursor(QString(":/tower/Resources/icetower.jpg"),QPoint(720,128));

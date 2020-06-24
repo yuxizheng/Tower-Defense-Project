@@ -18,6 +18,7 @@ public:
 public slots:
     void move_forward();
 private:
+    int init_health;
     bool rateChanged;
     int rateChangeCount;
     int rate;

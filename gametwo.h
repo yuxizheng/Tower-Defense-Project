@@ -1,28 +1,14 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef GAMETWO_H
+#define GAMETWO_H
 
-#include "tower.h"
-#include "bullet.h"
-#include "buildtowericon.h"
-#include "score.h"
-#include "health.h"
-#include "towerposition.h"
-#include "button.h"
+#include "game.h"
 
-#include <QGraphicsView>
-#include <QGraphicsScene>
-#include <QMouseEvent>
-#include <QVector>
-#include <QObject>
-
-class Game: public QGraphicsView
+class GameTwo:
 {
-    Q_OBJECT
 public:
-    Game(QWidget* parent=NULL);
+    GameTwo(QWidget* parent=NULL);
 
     void init();
-    void init2();
     void drawPanel(int x, int y, int width, int height, QColor color, double opacity);
     void gameOver();
     void displayGameOverWindow(QString textToDisplay);
@@ -38,7 +24,6 @@ public:
     bool upgrade;
     bool remove;
     void resetTowerStatus();
-    void recordWave();
 
     QVector<QPointF> position;
     QVector<TowerPosition*> tower_position;
@@ -50,14 +35,10 @@ public:
     Health * health;
     QGraphicsPixmapItem * back;
 
+
     bool towerPositionVerify;
 
-    int enemyWaveRecorder;
-    int level;
 
-public slots:
-    void home();
-    void leveltwo();
 };
 
-#endif // GAME_H
+#endif // GAMETWO_H
