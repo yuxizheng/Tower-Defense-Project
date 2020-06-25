@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BuildFireTower" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>buildfiretower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildFireTowerIcon" Collapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>buildfiretowericon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildIceTowerIcon" Collapsed="true">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAA=</HashCode>
+      <FileName>buildicetowericon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildRedTowerIcon" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>buildredtowericon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildTowerIcon" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAEAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>buildtowericon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildWaterTowerIcon" Collapsed="true">
+    <Position X="5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>buildwatertowericon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet" Collapsed="true">
+    <Position X="2.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQACAgAAAAAgAACAAAAAAAAgAAEACAAACIAAAAAAAA=</HashCode>
+      <FileName>bullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Button" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAACAAAAAAAAAAAQAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>button.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoQIAECCAAQBAAAEAAAAAAAAgAAAAAAAoAAgAAAAAAg=</HashCode>
+      <FileName>enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyTeam" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQAAAAAAAAABAAAAAAwAAAAAAAgAAAIg=</HashCode>
+      <FileName>enemyteam.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyTeamController" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAIAAEIABAAAACBAAAAAAAAAgAgAAAAAAAg=</HashCode>
+      <FileName>enemyteamcontroller.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireBullet" Collapsed="true">
+    <Position X="2.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>firebullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireTower" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAACCAAAAAAAEAAA=</HashCode>
+      <FileName>firetower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAUAAADAAAEEAAAIKICAIAEAAAIAAIgASAgNAIg=</HashCode>
+      <FileName>game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Health" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAg=</HashCode>
+      <FileName>health.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IceBullet" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAEAAAAAAAFAAAAAAA=</HashCode>
+      <FileName>icebullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IceTower" Collapsed="true">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAACCAAAAAAAEAAA=</HashCode>
+      <FileName>icetower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyWindow" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mywindow.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoveIcon" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>removeicon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Score" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABAAAAgAAAAIAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>score.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tower" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAIAAAAAEBAAAAAACCCBUAACAAAAAAAAEAAA=</HashCode>
+      <FileName>tower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TowerPosition" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAEAAAAAAAAAAAIACAAAQAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>towerposition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpgradeIcon" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>upgradeicon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaterBullet" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>waterbullet.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaterTower" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAACCAAAAAAAEAAA=</HashCode>
+      <FileName>watertower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoundIcon">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>soundicon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
